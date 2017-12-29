@@ -6,11 +6,10 @@ import router from './router'
 
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import axios from 'axios'
+import http from 'axios'
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
-
 
 Vue.config.productionTip = false;
 
@@ -18,8 +17,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
+  http,
   template: '<App/>',
   components: { App }
 })
-
-Vue.prototype.$http= axios;
