@@ -11,8 +11,8 @@ import axios from 'axios'
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-Vue.protype.$http = axios;
-Vue.config.productionTip = false
+
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
@@ -21,3 +21,5 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+Vue.prototype.$http= axios;

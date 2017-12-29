@@ -30,7 +30,7 @@ export default {
         this.$http({
           method: 'post',
           url: '/api/user/addUser',
-          data: {
+          body: {
             id:id,
             password:password
           }
