@@ -29,8 +29,8 @@
         console.log(password)
         this.$http({
           method: 'post',
-          url: '/api/user/addUser',
-//          url: 'http://172.20.10.2:3000/api/user/addUser',
+//          url: '/api/user/addUser',
+          url: 'http://172.20.10.2:3000/api/user/addUser',
           body: {
             id: id,
             password: password
