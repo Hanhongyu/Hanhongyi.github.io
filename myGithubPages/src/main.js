@@ -9,6 +9,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import http from 'axios'
+import '../static/font_icon/iconfont.css'
 
 Vue.use(VueRouter);
 Vue.use(VueResource);

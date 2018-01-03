@@ -27,15 +27,16 @@
         let password = this.password;
         console.log(id)
         console.log(password)
-        this.$http({
+/*        this.$http({
           method: 'post',
-//          url: '/api/user/addUser',
-          url: 'http://172.20.10.2:3000/api/user/addUser',
+          url: '/api/user/addUser',
+//          url: 'http://172.20.10.2:3000/api/user/addUser',
           body: {
             id: id,
             password: password
           }
-        })
+        })*/
+        this.$http.post('/api/user/addUser',{id: id, password: password})
       }
     }
   }
